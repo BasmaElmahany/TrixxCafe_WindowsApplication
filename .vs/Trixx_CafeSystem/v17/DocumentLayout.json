@@ -1,18 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\",
+  "WorkspaceRootPath": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\lenovo\\desktop\\project\\trixxcafe_windowsapplication\\login_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\aly\\trixxcafe_windowsapplication\\staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:staff.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\aly\\trixxcafe_windowsapplication\\login_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:login_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\lenovo\\desktop\\project\\trixxcafe_windowsapplication\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\aly\\trixxcafe_windowsapplication\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\lenovo\\desktop\\project\\trixxcafe_windowsapplication\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|c:\\users\\aly\\trixxcafe_windowsapplication\\context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82CBDE7D-A0CB-4771-A8CF-5D85403D1C11}|Trixx_CafeSystem.csproj|solutionrelative:context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,43 +34,86 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "Migrations\\Configuration.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:44:12.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Context.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Context.cs",
+              "RelativeDocumentMoniker": "Context.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Context.cs",
+              "RelativeToolTip": "Context.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:43:46.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Staff.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Staff.cs",
+              "RelativeDocumentMoniker": "Staff.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Staff.cs",
+              "RelativeToolTip": "Staff.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABAAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T20:36:40.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Category.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Category.cs",
               "RelativeDocumentMoniker": "Category.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Category.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Category.cs",
               "RelativeToolTip": "Category.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBMAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T19:30:55.207Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Login_User.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Login_User.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Login_User.cs",
               "RelativeDocumentMoniker": "Login_User.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Login_User.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Login_User.cs",
               "RelativeToolTip": "Login_User.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T19:27:38.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\Desktop\\Project\\TrixxCafe_WindowsApplication\\Program.cs",
+              "ToolTip": "C:\\Users\\Aly\\TrixxCafe_WindowsApplication\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-17T19:26:18.858Z",
               "EditorCaption": ""
