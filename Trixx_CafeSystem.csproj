@@ -66,12 +66,20 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_User.cs" />
+    <Compile Include="Migrations\202408180227503_init.cs" />
+    <Compile Include="Migrations\202408180227503_init.designer.cs">
+      <DependentUpon>202408180227503_init.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Salaries.cs" />
     <Compile Include="Staff.cs" />
+    <EmbeddedResource Include="Migrations\202408180227503_init.resx">
+      <DependentUpon>202408180227503_init.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

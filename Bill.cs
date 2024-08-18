@@ -18,7 +18,10 @@ namespace Trixx_CafeSystem
         public string Name_Of_Product { get; set; }
         public int Product_Qty { get; set; }
         public double Payment_Amount { get; set; }
-        public virtual ICollection<Product> Products { get; set; }
+
+        [ForeignKey("Products")]
+        public int ProductID { get; set; }
+        public virtual Product Products { get; set; }
         public virtual Order Order { get; set; }
     }
 }

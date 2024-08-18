@@ -15,8 +15,5 @@ namespace Trixx_CafeSystem
         public string User_Name { get; set; }
         public string Password { get; set; }
 
-        public ICollection<Product> Products { get; set; }
-        public ICollection<Order> Orders { get; set; }
-        public ICollection<Staff> Staffs { get; set; }
     }
 }

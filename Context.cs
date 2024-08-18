@@ -16,6 +16,12 @@ namespace Trixx_CafeSystem
 
         }
 
-
+        public virtual DbSet<Login_User> Login_Users { get; set; }
+        public virtual DbSet<Category> Categories { get; set; }
+        public virtual DbSet<Bill> Bills { get; set; }
+        public virtual DbSet<Order> Orders { get; set; }
+        public virtual DbSet<Product> Products { get; set; }
+        public virtual DbSet<Salaries> Salaries { get; set; }
+        public virtual DbSet<Staff> Staffs { get; set; }
     }
 }

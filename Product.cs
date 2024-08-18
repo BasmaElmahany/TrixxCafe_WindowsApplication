@@ -23,7 +23,7 @@ namespace Trixx_CafeSystem
 
         public int Stock_Qty { get; set; }
 
-        [Column(TypeName = "decimal(18,2)")]
+        [Column(TypeName = "decimal")]
         public decimal Price { get; set; }
 
         [Required]
