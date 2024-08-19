@@ -90,13 +90,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(174, 450);
+            this.panel1.Size = new System.Drawing.Size(174, 550);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox8
             // 
             this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
-            this.pictureBox8.Location = new System.Drawing.Point(17, 338);
+            this.pictureBox8.Location = new System.Drawing.Point(17, 459);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(45, 32);
             this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -108,7 +108,7 @@
             this.btnSettings.BackColor = System.Drawing.Color.Transparent;
             this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnSettings.ForeColor = System.Drawing.Color.White;
-            this.btnSettings.Location = new System.Drawing.Point(84, 338);
+            this.btnSettings.Location = new System.Drawing.Point(84, 459);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(90, 32);
             this.btnSettings.TabIndex = 14;
@@ -118,7 +118,7 @@
             // pictureBox7
             // 
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(17, 300);
+            this.pictureBox7.Location = new System.Drawing.Point(17, 411);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(45, 32);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -130,7 +130,7 @@
             this.btnReports.BackColor = System.Drawing.Color.Transparent;
             this.btnReports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnReports.ForeColor = System.Drawing.Color.White;
-            this.btnReports.Location = new System.Drawing.Point(84, 300);
+            this.btnReports.Location = new System.Drawing.Point(84, 411);
             this.btnReports.Name = "btnReports";
             this.btnReports.Size = new System.Drawing.Size(90, 32);
             this.btnReports.TabIndex = 12;
@@ -140,7 +140,7 @@
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(17, 262);
+            this.pictureBox6.Location = new System.Drawing.Point(17, 364);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(45, 32);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -152,7 +152,7 @@
             this.btnPOS.BackColor = System.Drawing.Color.Transparent;
             this.btnPOS.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPOS.ForeColor = System.Drawing.Color.White;
-            this.btnPOS.Location = new System.Drawing.Point(84, 262);
+            this.btnPOS.Location = new System.Drawing.Point(84, 364);
             this.btnPOS.Name = "btnPOS";
             this.btnPOS.Size = new System.Drawing.Size(90, 32);
             this.btnPOS.TabIndex = 10;
@@ -162,7 +162,7 @@
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(17, 224);
+            this.pictureBox5.Location = new System.Drawing.Point(17, 314);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(45, 32);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -174,7 +174,7 @@
             this.btnStaff.BackColor = System.Drawing.Color.Transparent;
             this.btnStaff.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStaff.ForeColor = System.Drawing.Color.White;
-            this.btnStaff.Location = new System.Drawing.Point(84, 224);
+            this.btnStaff.Location = new System.Drawing.Point(84, 314);
             this.btnStaff.Name = "btnStaff";
             this.btnStaff.Size = new System.Drawing.Size(90, 32);
             this.btnStaff.TabIndex = 8;
@@ -184,7 +184,7 @@
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(17, 186);
+            this.pictureBox4.Location = new System.Drawing.Point(17, 266);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 32);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -194,7 +194,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(17, 148);
+            this.pictureBox3.Location = new System.Drawing.Point(17, 218);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(45, 32);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,7 +206,7 @@
             this.btnProduct.BackColor = System.Drawing.Color.Transparent;
             this.btnProduct.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnProduct.ForeColor = System.Drawing.Color.White;
-            this.btnProduct.Location = new System.Drawing.Point(84, 186);
+            this.btnProduct.Location = new System.Drawing.Point(84, 266);
             this.btnProduct.Name = "btnProduct";
             this.btnProduct.Size = new System.Drawing.Size(90, 32);
             this.btnProduct.TabIndex = 5;
@@ -218,7 +218,7 @@
             this.btnCategory.BackColor = System.Drawing.Color.Transparent;
             this.btnCategory.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnCategory.ForeColor = System.Drawing.Color.White;
-            this.btnCategory.Location = new System.Drawing.Point(84, 148);
+            this.btnCategory.Location = new System.Drawing.Point(84, 218);
             this.btnCategory.Name = "btnCategory";
             this.btnCategory.Size = new System.Drawing.Size(90, 32);
             this.btnCategory.TabIndex = 4;
@@ -228,7 +228,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(17, 110);
+            this.pictureBox2.Location = new System.Drawing.Point(17, 170);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(45, 32);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -240,7 +240,7 @@
             this.btnHome.BackColor = System.Drawing.Color.Transparent;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(84, 110);
+            this.btnHome.Location = new System.Drawing.Point(84, 170);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(90, 32);
             this.btnHome.TabIndex = 2;
@@ -253,7 +253,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 71);
+            this.label1.Location = new System.Drawing.Point(12, 106);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(154, 25);
             this.label1.TabIndex = 1;
@@ -262,7 +262,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(27, 6);
+            this.pictureBox1.Location = new System.Drawing.Point(28, 26);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(100, 62);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -279,14 +279,14 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(174, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(626, 47);
+            this.panel2.Size = new System.Drawing.Size(748, 47);
             this.panel2.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(16, 16);
+            this.label2.Location = new System.Drawing.Point(15, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(103, 25);
             this.label2.TabIndex = 3;
@@ -296,9 +296,10 @@
             // 
             this.btnMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMin.Location = new System.Drawing.Point(455, 6);
+            this.btnMin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMin.Location = new System.Drawing.Point(537, 6);
             this.btnMin.Name = "btnMin";
-            this.btnMin.Size = new System.Drawing.Size(52, 35);
+            this.btnMin.Size = new System.Drawing.Size(63, 35);
             this.btnMin.TabIndex = 2;
             this.btnMin.Text = "تصغير";
             this.btnMin.UseVisualStyleBackColor = false;
@@ -308,9 +309,10 @@
             // 
             this.btnMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMax.Location = new System.Drawing.Point(513, 6);
+            this.btnMax.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMax.Location = new System.Drawing.Point(606, 6);
             this.btnMax.Name = "btnMax";
-            this.btnMax.Size = new System.Drawing.Size(52, 35);
+            this.btnMax.Size = new System.Drawing.Size(63, 35);
             this.btnMax.TabIndex = 1;
             this.btnMax.Text = "تكبير";
             this.btnMax.UseVisualStyleBackColor = false;
@@ -320,9 +322,10 @@
             // 
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Location = new System.Drawing.Point(571, 6);
+            this.btnExit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.Location = new System.Drawing.Point(675, 6);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(52, 35);
+            this.btnExit.Size = new System.Drawing.Size(61, 35);
             this.btnExit.TabIndex = 0;
             this.btnExit.Text = "اغلاق";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -335,14 +338,14 @@
             this.controlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlPanel.Location = new System.Drawing.Point(174, 47);
             this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(626, 403);
+            this.controlPanel.Size = new System.Drawing.Size(748, 503);
             this.controlPanel.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(245, 302);
+            this.label3.Location = new System.Drawing.Point(267, 360);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 32);
             this.label3.TabIndex = 1;
@@ -353,7 +356,7 @@
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
             this.pictureBox9.Location = new System.Drawing.Point(101, 6);
             this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(434, 279);
+            this.pictureBox9.Size = new System.Drawing.Size(568, 309);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
@@ -363,7 +366,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(922, 550);
             this.Controls.Add(this.controlPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
