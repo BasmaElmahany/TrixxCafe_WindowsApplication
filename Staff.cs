@@ -15,10 +15,12 @@ namespace Trixx_CafeSystem
         public string Staff_Name { get; set; }
         [ForeignKey("Login_User")]
         public int User_ID {  get; set; }
-        public int NID { get; set; }
-        public int Address { get; set; }
-
+        [MaxLength(14), Column(TypeName = "varchar")]
+        public string NID { get; set; }
+        public string Address { get; set; }
+        [Column(TypeName = "date")]
         public DateTime Assign_Date { get; set; }
+        [MaxLength(11)]
         public string Staff_Phone { get; set; }
         public virtual Login_User Login_User { get; set; }
 

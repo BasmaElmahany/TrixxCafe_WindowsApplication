@@ -10,18 +10,18 @@ namespace Trixx_CafeSystem
 {
     internal class Bill
     {
-        public int Id { get; set; }
+        [Key]
+        public int BillId { get; set; }
         [ForeignKey("Order")]
-        public int? OrderId { get; set; }
-        public double Price_Of_Product { get; set; }
-        [Required]
-        public string Name_Of_Product { get; set; }
-        public int Product_Qty { get; set; }
-        public double Payment_Amount { get; set; }
-
-        [ForeignKey("Products")]
-        public int ProductID { get; set; }
-        public virtual Product Products { get; set; }
+        public int OrderId { get; set; }
         public virtual Order Order { get; set; }
+        public double TotalPrice { get; set; }
+        [Column(TypeName = ("date"))]
+        public DateTime BillDate { get; set; }
+        [Column(TypeName = ("time"))]
+        public TimeSpan BillTime { get; set; }
+        [ForeignKey("Cashier_User")]
+        public int CashierID { get; set; }
+        public Login_User Cashier_User { get; set; }
     }
 }

@@ -29,6 +29,6 @@ namespace Trixx_CafeSystem
         [Required]
         [StringLength(100)]
         public string Name { get; set; }
-
+        public virtual ICollection<OrderProducts> OrderProducts { get; set; }
     }
 }
