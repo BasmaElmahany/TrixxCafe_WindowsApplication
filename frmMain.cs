@@ -7,14 +7,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Trixx_CafeSystem
 {
     public partial class frmMain : Form
     {
-        public frmMain()
+        private string _loggedInUserName;
+
+        public frmMain(string loggedInUserName)
         {
             InitializeComponent();
+            _loggedInUserName = loggedInUserName;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -80,6 +84,11 @@ namespace Trixx_CafeSystem
             this.WindowState = FormWindowState.Minimized;
         }
 
-
+        private void btnModifyProfile_Click(object sender, EventArgs e)
+        {
+            // Open the Profile form and pass the logged -in username
+            Profile profileForm = new Profile(_loggedInUserName);
+            profileForm.ShowDialog(); // Show profile form as a dialog
+        }
     }
 }

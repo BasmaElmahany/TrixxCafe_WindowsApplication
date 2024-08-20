@@ -54,6 +54,7 @@
             this.controlPanel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.btnModifyProfile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -272,6 +273,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.btnModifyProfile);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnMin);
             this.panel2.Controls.Add(this.btnMax);
@@ -361,6 +363,19 @@
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
             // 
+            // btnModifyProfile
+            // 
+            this.btnModifyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnModifyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyProfile.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifyProfile.Location = new System.Drawing.Point(183, 6);
+            this.btnModifyProfile.Name = "btnModifyProfile";
+            this.btnModifyProfile.Size = new System.Drawing.Size(168, 35);
+            this.btnModifyProfile.TabIndex = 4;
+            this.btnModifyProfile.Text = "بيانات الملف الشخصي";
+            this.btnModifyProfile.UseVisualStyleBackColor = false;
+            this.btnModifyProfile.Click += new System.EventHandler(this.btnModifyProfile_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -420,5 +435,6 @@
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button btnModifyProfile;
     }
 }
