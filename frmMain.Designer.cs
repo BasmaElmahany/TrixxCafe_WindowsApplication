@@ -47,14 +47,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
+            this.btnModifyProfile = new System.Windows.Forms.Button();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.btnMin = new System.Windows.Forms.Button();
             this.btnMax = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.controlPanel = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelHome = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.btnModifyProfile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -137,6 +137,7 @@
             this.btnReports.TabIndex = 12;
             this.btnReports.Text = "التقارير";
             this.btnReports.UseVisualStyleBackColor = false;
+            this.btnReports.Click += new System.EventHandler(this.btnReports_Click);
             // 
             // pictureBox6
             // 
@@ -159,6 +160,7 @@
             this.btnPOS.TabIndex = 10;
             this.btnPOS.Text = "الطلبات";
             this.btnPOS.UseVisualStyleBackColor = false;
+            this.btnPOS.Click += new System.EventHandler(this.btnPOS_Click);
             // 
             // pictureBox5
             // 
@@ -181,6 +183,7 @@
             this.btnStaff.TabIndex = 8;
             this.btnStaff.Text = "طاقم العمل";
             this.btnStaff.UseVisualStyleBackColor = false;
+            this.btnStaff.Click += new System.EventHandler(this.btnStaff_Click);
             // 
             // pictureBox4
             // 
@@ -225,6 +228,7 @@
             this.btnCategory.TabIndex = 4;
             this.btnCategory.Text = "التصنيفات";
             this.btnCategory.UseVisualStyleBackColor = false;
+            this.btnCategory.Click += new System.EventHandler(this.btnCategory_Click);
             // 
             // pictureBox2
             // 
@@ -247,6 +251,7 @@
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "لوحة التحكم";
             this.btnHome.UseVisualStyleBackColor = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // label1
             // 
@@ -274,7 +279,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btnModifyProfile);
-            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.btnMin);
             this.panel2.Controls.Add(this.btnMax);
             this.panel2.Controls.Add(this.btnExit);
@@ -284,15 +289,28 @@
             this.panel2.Size = new System.Drawing.Size(748, 47);
             this.panel2.TabIndex = 1;
             // 
-            // label2
+            // btnModifyProfile
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "لوحة التحكم";
+            this.btnModifyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
+            this.btnModifyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnModifyProfile.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModifyProfile.Location = new System.Drawing.Point(183, 6);
+            this.btnModifyProfile.Name = "btnModifyProfile";
+            this.btnModifyProfile.Size = new System.Drawing.Size(168, 35);
+            this.btnModifyProfile.TabIndex = 4;
+            this.btnModifyProfile.Text = "بيانات الملف الشخصي";
+            this.btnModifyProfile.UseVisualStyleBackColor = false;
+            this.btnModifyProfile.Click += new System.EventHandler(this.btnModifyProfile_Click);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(15, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(103, 25);
+            this.lblTitle.TabIndex = 3;
+            this.lblTitle.Text = "لوحة التحكم";
             // 
             // btnMin
             // 
@@ -335,7 +353,7 @@
             // 
             // controlPanel
             // 
-            this.controlPanel.Controls.Add(this.label3);
+            this.controlPanel.Controls.Add(this.labelHome);
             this.controlPanel.Controls.Add(this.pictureBox9);
             this.controlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlPanel.Location = new System.Drawing.Point(174, 47);
@@ -343,15 +361,15 @@
             this.controlPanel.Size = new System.Drawing.Size(748, 503);
             this.controlPanel.TabIndex = 1;
             // 
-            // label3
+            // labelHome
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(267, 360);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "نظام إدارة المقهي";
+            this.labelHome.AutoSize = true;
+            this.labelHome.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelHome.Location = new System.Drawing.Point(267, 360);
+            this.labelHome.Name = "labelHome";
+            this.labelHome.Size = new System.Drawing.Size(192, 32);
+            this.labelHome.TabIndex = 1;
+            this.labelHome.Text = "نظام إدارة المقهي";
             // 
             // pictureBox9
             // 
@@ -362,19 +380,6 @@
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox9.TabIndex = 0;
             this.pictureBox9.TabStop = false;
-            // 
-            // btnModifyProfile
-            // 
-            this.btnModifyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.btnModifyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnModifyProfile.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifyProfile.Location = new System.Drawing.Point(183, 6);
-            this.btnModifyProfile.Name = "btnModifyProfile";
-            this.btnModifyProfile.Size = new System.Drawing.Size(168, 35);
-            this.btnModifyProfile.TabIndex = 4;
-            this.btnModifyProfile.Text = "بيانات الملف الشخصي";
-            this.btnModifyProfile.UseVisualStyleBackColor = false;
-            this.btnModifyProfile.Click += new System.EventHandler(this.btnModifyProfile_Click);
             // 
             // frmMain
             // 
@@ -389,6 +394,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
             this.Text = "frmMain";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
@@ -433,8 +439,8 @@
         private System.Windows.Forms.Button btnProduct;
         private System.Windows.Forms.Button btnCategory;
         private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblTitle;
+        private System.Windows.Forms.Label labelHome;
         private System.Windows.Forms.Button btnModifyProfile;
     }
 }

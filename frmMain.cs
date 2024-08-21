@@ -14,6 +14,10 @@ namespace Trixx_CafeSystem
     public partial class frmMain : Form
     {
         private string _loggedInUserName;
+        private Control logoControl; 
+        private Control welcomeLabelControl; 
+
+
 
         public frmMain(string loggedInUserName)
         {
@@ -86,9 +90,65 @@ namespace Trixx_CafeSystem
 
         private void btnModifyProfile_Click(object sender, EventArgs e)
         {
-            // Open the Profile form and pass the logged -in username
+            
             Profile profileForm = new Profile(_loggedInUserName);
-            profileForm.ShowDialog(); // Show profile form as a dialog
+            profileForm.ShowDialog(); 
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            lblTitle.Text = "لوحة التحكم";
+          
+            logoControl = pictureBox9; 
+            welcomeLabelControl = labelHome;  
+
+
+        }
+        private void LoadFormIntoPanel(Form form)
+        {
+            form.TopLevel = false;
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Dock = DockStyle.Fill;
+            controlPanel.Controls.Clear();
+            controlPanel.Controls.Add(form);
+            form.Show();
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = "لوحة التحكم"; // Update the label text to "Dashboard"
+            controlPanel.Controls.Clear(); // Clear any current content in panel3
+            controlPanel.Controls.Add(logoControl); // Re-add the logo control (PictureBox) to panel3
+            controlPanel.Controls.Add(welcomeLabelControl);  // Re-add the welcome label to panel3
+            logoControl.Show(); // Ensure the logo is visible
+        }
+
+        private void btnCategory_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = "التصنيفات";
+            SampleAdd categorysForm = new SampleAdd();
+            LoadFormIntoPanel(categorysForm);
+        }
+
+        private void btnStaff_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = "طاقم العمل";
+            Staff_Details staffForm = new Staff_Details();
+            LoadFormIntoPanel(staffForm);
+        }
+
+        private void btnReports_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = " التقارير";
+            frmReports reportForm = new frmReports();
+            LoadFormIntoPanel(reportForm);
+        }
+
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = " الطلبات";
+            frmPOS posForm = new frmPOS();
+            LoadFormIntoPanel(posForm);
         }
     }
 }
