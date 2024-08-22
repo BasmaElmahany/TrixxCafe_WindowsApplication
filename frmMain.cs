@@ -94,7 +94,7 @@ namespace Trixx_CafeSystem
             //Profile profileForm = new Profile(_loggedInUserName);
           //  profileForm.ShowDialog();
 
-            lblTitle.Text = " بيانات الملف الشخصي";
+            lblTitle.Text = "الملف الشخصي";
 
             Profile profileForm = new Profile(_loggedInUserName)
             {
