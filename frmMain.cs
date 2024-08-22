@@ -91,14 +91,22 @@ namespace Trixx_CafeSystem
         private void btnModifyProfile_Click(object sender, EventArgs e)
         {
             
+            //Profile profileForm = new Profile(_loggedInUserName);
+          //  profileForm.ShowDialog();
+
+            lblTitle.Text = " بيانات الملف الشخصي";
+
             Profile profileForm = new Profile(_loggedInUserName);
-            profileForm.ShowDialog(); 
+            LoadFormIntoPanel(profileForm);
+
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblTitle.Text = "لوحة التحكم";
-          
+            lblUsername.Text = "اسم المستخدم الحالي : " + _loggedInUserName;
+            lblUsername.Font = new Font(lblUsername.Font.FontFamily, 10, FontStyle.Bold);
+
             logoControl = pictureBox9; 
             welcomeLabelControl = labelHome;  
 
