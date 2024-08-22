@@ -54,9 +54,17 @@ namespace Trixx_CafeSystem
                 user.User_Name = newUserName;
                 user.Password = newPassword;
                 _context.SaveChanges();
+                _loggedInUserName = newUserName; // Update the logged-in username
+                                                 // Ensure the MainForm is set as the Owner
+                if (this.Owner is frmMain mainForm)
+                {
+                    mainForm.UpdateUsernameLabel(newUserName);
+                }
 
                 MessageBox.Show("تم تحديث الملف الشخصي بنجاح.", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                _loggedInUserName = newUserName; // Update the logged-in username
+
+                
+    
             }
 
         }

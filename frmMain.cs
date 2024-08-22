@@ -96,8 +96,12 @@ namespace Trixx_CafeSystem
 
             lblTitle.Text = " بيانات الملف الشخصي";
 
-            Profile profileForm = new Profile(_loggedInUserName);
+            Profile profileForm = new Profile(_loggedInUserName)
+            {
+                Owner = this // Set the owner to the current MainForm instance
+            };
             LoadFormIntoPanel(profileForm);
+           
 
         }
 
@@ -121,7 +125,10 @@ namespace Trixx_CafeSystem
             controlPanel.Controls.Add(form);
             form.Show();
         }
-
+        public void UpdateUsernameLabel(string newUsername)
+        {
+            lblUsername.Text = "اسم المستخدم الحالي : " + newUsername; 
+        }
         private void btnHome_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "لوحة التحكم"; // Update the label text to "Dashboard"
