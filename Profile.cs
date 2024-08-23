@@ -54,9 +54,17 @@ namespace Trixx_CafeSystem
                 user.User_Name = newUserName;
                 user.Password = newPassword;
                 _context.SaveChanges();
+                _loggedInUserName = newUserName; // Update the logged-in username
+                                                 // Ensure the MainForm is set as the Owner
+                if (this.Owner is frmMain mainForm)
+                {
+                    mainForm.UpdateUsernameLabel(newUserName);
+                }
 
                 MessageBox.Show("تم تحديث الملف الشخصي بنجاح.", "نجاح", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                _loggedInUserName = newUserName; // Update the logged-in username
+
+                
+    
             }
 
         }
@@ -101,7 +109,7 @@ namespace Trixx_CafeSystem
 
             if (!IsValidPassword(newPassword))
             {
-                MessageBox.Show("يجب أن تحتوي كلمة المرور على حرف كبير واحد وحرف صغير واحد ورقم واحد وحرف خاص واحد على الأقل.", "خطأ في التحقق", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("يجب أن تتكون كلمة المرور من 5 اجزاء على الأقل، وتحتوي على أرقام فقط بالإضافة إلى حرف واحد على الأقل.", "خطأ في التحقق", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
@@ -131,11 +139,27 @@ namespace Trixx_CafeSystem
         }
         private bool IsValidPassword(string password)
         {
-            return password.Length >= 4 &&
-                   password.Any(char.IsUpper) &&
-                   password.Any(char.IsLower) &&
-                   password.Any(char.IsDigit) &&
-                   password.Any(ch => !char.IsLetterOrDigit(ch));
+            if (password.Length < 5) return false;
+
+            bool hasLetter = false;
+            bool hasOnlyDigitsAndLetters = true;
+
+            foreach (char c in password)
+            {
+                if (char.IsLetter(c)) hasLetter = true;
+                if (!char.IsLetterOrDigit(c)) hasOnlyDigitsAndLetters = false;
+            }
+
+            // The password should contain at least one letter and consist of only letters and digits
+            return hasLetter && hasOnlyDigitsAndLetters;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            // Close the Profile form
+            this.Close();
+        }
+
+
     }
 }

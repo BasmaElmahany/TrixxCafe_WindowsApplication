@@ -91,14 +91,26 @@ namespace Trixx_CafeSystem
         private void btnModifyProfile_Click(object sender, EventArgs e)
         {
             
-            Profile profileForm = new Profile(_loggedInUserName);
-            profileForm.ShowDialog(); 
+            //Profile profileForm = new Profile(_loggedInUserName);
+          //  profileForm.ShowDialog();
+
+            lblTitle.Text = "الملف الشخصي";
+
+            Profile profileForm = new Profile(_loggedInUserName)
+            {
+                Owner = this // Set the owner to the current MainForm instance
+            };
+            LoadFormIntoPanel(profileForm);
+           
+
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             lblTitle.Text = "لوحة التحكم";
-          
+            lblUsername.Text = "اسم المستخدم الحالي : " + _loggedInUserName;
+            lblUsername.Font = new Font(lblUsername.Font.FontFamily, 10, FontStyle.Bold);
+
             logoControl = pictureBox9; 
             welcomeLabelControl = labelHome;  
 
@@ -113,7 +125,10 @@ namespace Trixx_CafeSystem
             controlPanel.Controls.Add(form);
             form.Show();
         }
-
+        public void UpdateUsernameLabel(string newUsername)
+        {
+            lblUsername.Text = "اسم المستخدم الحالي : " + newUsername; 
+        }
         private void btnHome_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "لوحة التحكم"; // Update the label text to "Dashboard"

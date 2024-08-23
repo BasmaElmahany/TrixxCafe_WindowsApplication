@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblUsername = new System.Windows.Forms.Label();
             this.btnModifyProfile = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.btnMin = new System.Windows.Forms.Button();
@@ -278,6 +279,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.lblUsername);
             this.panel2.Controls.Add(this.btnModifyProfile);
             this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.btnMin);
@@ -286,15 +288,23 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(174, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(748, 47);
+            this.panel2.Size = new System.Drawing.Size(771, 47);
             this.panel2.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.Location = new System.Drawing.Point(160, 15);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(0, 17);
+            this.lblUsername.TabIndex = 5;
             // 
             // btnModifyProfile
             // 
             this.btnModifyProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnModifyProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModifyProfile.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModifyProfile.Location = new System.Drawing.Point(183, 6);
+            this.btnModifyProfile.Location = new System.Drawing.Point(386, 6);
             this.btnModifyProfile.Name = "btnModifyProfile";
             this.btnModifyProfile.Size = new System.Drawing.Size(168, 35);
             this.btnModifyProfile.TabIndex = 4;
@@ -306,7 +316,7 @@
             // 
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(15, 9);
+            this.lblTitle.Location = new System.Drawing.Point(6, 9);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(103, 25);
             this.lblTitle.TabIndex = 3;
@@ -317,7 +327,7 @@
             this.btnMin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnMin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMin.Location = new System.Drawing.Point(537, 6);
+            this.btnMin.Location = new System.Drawing.Point(560, 6);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(63, 35);
             this.btnMin.TabIndex = 2;
@@ -330,7 +340,7 @@
             this.btnMax.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnMax.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMax.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMax.Location = new System.Drawing.Point(606, 6);
+            this.btnMax.Location = new System.Drawing.Point(629, 6);
             this.btnMax.Name = "btnMax";
             this.btnMax.Size = new System.Drawing.Size(63, 35);
             this.btnMax.TabIndex = 1;
@@ -343,7 +353,7 @@
             this.btnExit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.Location = new System.Drawing.Point(675, 6);
+            this.btnExit.Location = new System.Drawing.Point(698, 6);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(61, 35);
             this.btnExit.TabIndex = 0;
@@ -358,7 +368,7 @@
             this.controlPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.controlPanel.Location = new System.Drawing.Point(174, 47);
             this.controlPanel.Name = "controlPanel";
-            this.controlPanel.Size = new System.Drawing.Size(748, 503);
+            this.controlPanel.Size = new System.Drawing.Size(771, 503);
             this.controlPanel.TabIndex = 1;
             // 
             // labelHome
@@ -386,7 +396,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(922, 550);
+            this.ClientSize = new System.Drawing.Size(945, 550);
             this.Controls.Add(this.controlPanel);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -442,5 +452,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label labelHome;
         private System.Windows.Forms.Button btnModifyProfile;
+        private System.Windows.Forms.Label lblUsername;
     }
 }

@@ -35,7 +35,7 @@ namespace Trixx_CafeSystem
             // Validate password
             if (!ValidatePassword(password))
             {
-                MessageBox.Show("يجب أن تحتوي كلمة المرور على حرف كبير واحد على الأقل، وحرف صغير واحد، ورقم واحد، وحرف خاص واحد، وألا يقل طولها عن 4 أحرف.", "كلمة المرور غير صالحة");
+                MessageBox.Show("يجب أن تتكون كلمة المرور من 5 اجزاء على الأقل، وتحتوي على أرقام فقط بالإضافة إلى حرف واحد على الأقل.", "كلمة المرور غير صالحة");
                 return;
             }
             using (var context = new Context())
@@ -45,7 +45,7 @@ namespace Trixx_CafeSystem
                 if (user != null)
                 {
                     // If user is valid, open MainForm and pass the username
-                    frmMain mainForm = new frmMain(userName);
+                    frmMain mainForm = new frmMain(user.User_Name);
                     this.Hide(); // Hide the login form
                     mainForm.ShowDialog(); // Show the main form as a dialog
                     this.Close(); // Close the login form after the main form is closed
@@ -58,18 +58,19 @@ namespace Trixx_CafeSystem
         }
         private bool ValidatePassword(string password)
         {
-            if (password.Length < 4) return false;
-            bool hasUpper = false, hasLower = false, hasDigit = false, hasSpecialChar = false;
+            if (password.Length < 5) return false;
+
+            bool hasLetter = false;
+            bool hasOnlyDigitsAndLetters = true;
 
             foreach (char c in password)
             {
-                if (char.IsUpper(c)) hasUpper = true;
-                if (char.IsLower(c)) hasLower = true;
-                if (char.IsDigit(c)) hasDigit = true;
-                if (!char.IsLetterOrDigit(c)) hasSpecialChar = true;
+                if (char.IsLetter(c)) hasLetter = true;
+                if (!char.IsLetterOrDigit(c)) hasOnlyDigitsAndLetters = false;
             }
 
-            return hasUpper && hasLower && hasDigit && hasSpecialChar;
+            // The password should contain at least one letter and consist of only letters and digits
+            return hasLetter && hasOnlyDigitsAndLetters;
         }
     }
 }
