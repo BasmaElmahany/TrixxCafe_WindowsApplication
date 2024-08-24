@@ -162,7 +162,7 @@ namespace Trixx_CafeSystem
         private void btnPOS_Click(object sender, EventArgs e)
         {
             lblTitle.Text = " الطلبات";
-            frmPOS posForm = new frmPOS();
+            frmPOS posForm = new frmPOS(_loggedInUserName);
             LoadFormIntoPanel(posForm);
         }
     }
