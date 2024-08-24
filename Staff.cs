@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Trixx_CafeSystem
 {
-    internal class Staff
+    public class Staff
     {
         [Key]
         public int Staff_ID { get; set; }
@@ -24,8 +24,8 @@ namespace Trixx_CafeSystem
         public string Staff_Phone { get; set; }
         public virtual Login_User Login_User { get; set; }
 
-        // Don't forget to name the table => Salaries when you create it  
-        public virtual Salaries Salary { get; set; } // one to one relationship
+      
+        public virtual ICollection<Salaries>  Salaries  { get; set; } 
 
     }
 }
