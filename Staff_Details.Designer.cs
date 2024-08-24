@@ -1,4 +1,5 @@
-﻿namespace Trixx_CafeSystem
+﻿
+namespace Trixx_CafeSystem
 {
     partial class Staff_Details
     {
@@ -28,18 +29,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.staffName = new System.Windows.Forms.Label();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPhoneNumber = new System.Windows.Forms.TextBox();
+            this.phoneNumber = new System.Windows.Forms.Label();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.txtNID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -47,138 +44,126 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(80)))));
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(482, 112);
-            this.panel1.TabIndex = 0;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Red;
-            this.pictureBox1.Image = global::Trixx_CafeSystem.Properties.Resources.download__1_;
-            this.pictureBox1.Location = new System.Drawing.Point(335, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 86);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.panel1.Size = new System.Drawing.Size(405, 100);
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(116, 46);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 25);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "تفاصيل الموظف";
+            this.label1.Location = new System.Drawing.Point(128, 30);
+            this.label1.Size = new System.Drawing.Size(164, 25);
+            this.label1.Text = "اضافة موظف جديد";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Trixx_CafeSystem.Properties.Resources.staff_Icon;
+            this.pictureBox1.Location = new System.Drawing.Point(311, 12);
+            this.pictureBox1.Size = new System.Drawing.Size(66, 72);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(0, 379);
+            this.panel2.Size = new System.Drawing.Size(405, 71);
+            // 
+            // btnClose
+            // 
+            this.btnClose.FlatAppearance.BorderSize = 0;
+            this.btnClose.Location = new System.Drawing.Point(106, 17);
+            // 
+            // btnSave
+            // 
+            this.btnSave.FlatAppearance.BorderSize = 0;
+            this.btnSave.Location = new System.Drawing.Point(253, 17);
+            // 
+            // staffName
+            // 
+            this.staffName.AutoSize = true;
+            this.staffName.Location = new System.Drawing.Point(351, 118);
+            this.staffName.Name = "staffName";
+            this.staffName.Size = new System.Drawing.Size(42, 19);
+            this.staffName.TabIndex = 2;
+            this.staffName.Text = "الاسم";
+            // 
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(236, 140);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(157, 26);
+            this.txtName.TabIndex = 3;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.Location = new System.Drawing.Point(236, 250);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(157, 26);
+            this.txtPhoneNumber.TabIndex = 5;
+            // 
+            // phoneNumber
+            // 
+            this.phoneNumber.AutoSize = true;
+            this.phoneNumber.Location = new System.Drawing.Point(313, 228);
+            this.phoneNumber.Name = "phoneNumber";
+            this.phoneNumber.Size = new System.Drawing.Size(80, 19);
+            this.phoneNumber.TabIndex = 4;
+            this.phoneNumber.Text = "رقم التليفون";
+            // 
+            // txtAddress
+            // 
+            this.txtAddress.Location = new System.Drawing.Point(12, 250);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(198, 45);
+            this.txtAddress.TabIndex = 7;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(420, 159);
+            this.label2.Location = new System.Drawing.Point(159, 228);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "الاسم";
+            this.label2.Size = new System.Drawing.Size(51, 19);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "العنوان";
             // 
-            // textBox1
+            // txtNID
             // 
-            this.textBox1.Location = new System.Drawing.Point(242, 156);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(158, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(12, 161);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.txtNID.Location = new System.Drawing.Point(12, 140);
+            this.txtNID.Name = "txtNID";
+            this.txtNID.Size = new System.Drawing.Size(198, 26);
+            this.txtNID.TabIndex = 9;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(163, 164);
+            this.label3.Location = new System.Drawing.Point(125, 118);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "نوع الشغل";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(409, 231);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 13);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "رقم التليفون";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(245, 231);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(158, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(0, 335);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(482, 66);
-            this.panel2.TabIndex = 7;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.LightCoral;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.button1.Location = new System.Drawing.Point(307, 7);
-            this.button1.Margin = new System.Windows.Forms.Padding(5, 3, 3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(79, 37);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "حفظ";
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(80)))));
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.button3.Location = new System.Drawing.Point(185, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(79, 37);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "الغاء";
-            this.button3.UseVisualStyleBackColor = false;
+            this.label3.Size = new System.Drawing.Size(85, 19);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "الرقم القومي";
             // 
             // Staff_Details
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(482, 401);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(405, 450);
+            this.Controls.Add(this.txtNID);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.phoneNumber);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.staffName);
             this.Name = "Staff_Details";
-            this.Text = " ";
+            this.Text = "Staff_Details";
+            this.Controls.SetChildIndex(this.panel1, 0);
+            this.Controls.SetChildIndex(this.panel2, 0);
+            this.Controls.SetChildIndex(this.staffName, 0);
+            this.Controls.SetChildIndex(this.txtName, 0);
+            this.Controls.SetChildIndex(this.phoneNumber, 0);
+            this.Controls.SetChildIndex(this.txtPhoneNumber, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.txtAddress, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.txtNID, 0);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -190,17 +175,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label staffName;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPhoneNumber;
+        private System.Windows.Forms.Label phoneNumber;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox txtNID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
     }
 }

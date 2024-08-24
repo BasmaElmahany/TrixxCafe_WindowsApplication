@@ -2,13 +2,15 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
-
+using Trixx_CafeSystem.Model;
+using Trixx_CafeSystem.View;
 namespace Trixx_CafeSystem
 {
     public partial class frmMain : Form
@@ -27,17 +29,21 @@ namespace Trixx_CafeSystem
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            // Show a confirmation dialog
-            DialogResult result = MessageBox.Show("هل تريد تاكيد الخروج ؟؟", "تاكيد الخروج", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-            // Check the user's response
-            if (result == DialogResult.Yes)
+            try
             {
-                Application.Exit(); // Exit the application
+                DialogResult result = RTLMessageBoxForm.Show("هل تريد الخروج ؟", "الخروج");
+                if (result == DialogResult.Yes)
+                {
+                    Application.Exit() ; // Close the current form
+                }
             }
-            // If the user selects "No", do nothing and return to the application
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Exception: {ex.Message}");
+            }
         }
-        
+
+
         private Size originalSize = new Size(922, 550);
         private Point originalLocation = new Point(0, 0);
         private Point originalExitButtonLocation;
@@ -141,15 +147,15 @@ namespace Trixx_CafeSystem
         private void btnCategory_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "التصنيفات";
-            SampleAdd categorysForm = new SampleAdd();
-            LoadFormIntoPanel(categorysForm);
+            frmCategoryView frmCategoryView = new frmCategoryView();
+            LoadFormIntoPanel(frmCategoryView);
         }
 
         private void btnStaff_Click(object sender, EventArgs e)
         {
             lblTitle.Text = "طاقم العمل";
-            Staff_Details staffForm = new Staff_Details();
-            LoadFormIntoPanel(staffForm);
+            frmStaff frmStaff = new frmStaff(_loggedInUserName);
+            LoadFormIntoPanel(frmStaff);
         }
 
         private void btnReports_Click(object sender, EventArgs e)
@@ -164,6 +170,13 @@ namespace Trixx_CafeSystem
             lblTitle.Text = " الطلبات";
             frmPOS posForm = new frmPOS(_loggedInUserName);
             LoadFormIntoPanel(posForm);
+        }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            lblTitle.Text = " الاجور";
+            FormSalaries formSalaries = new FormSalaries();
+            LoadFormIntoPanel(formSalaries);
         }
     }
 }

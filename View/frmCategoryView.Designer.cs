@@ -1,6 +1,6 @@
 ﻿using System.Drawing;
 
-namespace Trixx_CafeSystem.View
+namespace Trixx_CafeSystem.Model
 {
     partial class frmCategoryView
     {

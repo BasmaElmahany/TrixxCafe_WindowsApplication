@@ -180,7 +180,7 @@
             // 
             this.dgvPrint.FillWeight = 50F;
             this.dgvPrint.HeaderText = "";
-            this.dgvPrint.Image = global::Trixx_CafeSystem.Properties.Resources.download__1_;
+            this.dgvPrint.Image = global::Trixx_CafeSystem.Properties.Resources.newdownload11;
             this.dgvPrint.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
             this.dgvPrint.MinimumWidth = 6;
             this.dgvPrint.Name = "dgvPrint";
@@ -189,7 +189,7 @@
             // 
             // frmBillList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(898, 621);

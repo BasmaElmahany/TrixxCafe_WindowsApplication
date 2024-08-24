@@ -70,6 +70,7 @@ namespace Trixx_CafeSystem
             // 
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.Location = new System.Drawing.Point(234, 17);
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click_1);
             // 
             // lblname
             // 
@@ -87,6 +88,7 @@ namespace Trixx_CafeSystem
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(264, 27);
             this.comboBox1.TabIndex = 0;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // FormSalariesAdd
             // 

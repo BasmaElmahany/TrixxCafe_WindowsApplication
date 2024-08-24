@@ -23,5 +23,6 @@ namespace Trixx_CafeSystem
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Salaries> Salaries { get; set; }
         public virtual DbSet<Staff> Staffs { get; set; }
+        public virtual DbSet<OrderProducts> OrderProducts { get; set; }
     }
 }

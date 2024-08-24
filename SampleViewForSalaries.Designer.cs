@@ -29,6 +29,7 @@ namespace Trixx_CafeSystem
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SampleViewForSalaries));
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,7 +73,7 @@ namespace Trixx_CafeSystem
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::Trixx_CafeSystem.Properties.Resources.line2;
+            this.pictureBox1.BackgroundImage = global::Trixx_CafeSystem.Properties.Resources.line1;
             this.pictureBox1.InitialImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(39, 143);
             this.pictureBox1.Name = "pictureBox1";
@@ -82,27 +83,29 @@ namespace Trixx_CafeSystem
             // 
             // btnAdd
             // 
-            this.btnAdd.Image = global::Trixx_CafeSystem.Properties.Resources.images3;
+            this.btnAdd.BackColor = System.Drawing.Color.Transparent;
+            this.btnAdd.Image = ((System.Drawing.Image)(resources.GetObject("btnAdd.Image")));
             this.btnAdd.Location = new System.Drawing.Point(672, 72);
             this.btnAdd.Name = "btnAdd";
+            this.btnAdd.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.btnAdd.Size = new System.Drawing.Size(55, 55);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // SampleView
+            // SampleViewForSalaries
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(773, 570);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.btnAdd);
             this.Font = new System.Drawing.Font("Segoe UI Emoji", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "SampleView";
+            this.Name = "SampleViewForSalaries";
             this.Text = "SampleView";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

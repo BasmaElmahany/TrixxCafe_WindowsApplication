@@ -97,7 +97,7 @@
             // 
             // pictureBox8
             // 
-            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Image = global::Trixx_CafeSystem.Properties.Resources.money;
             this.pictureBox8.Location = new System.Drawing.Point(17, 459);
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(45, 32);
@@ -114,8 +114,9 @@
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(90, 32);
             this.btnSettings.TabIndex = 14;
-            this.btnSettings.Text = "الاعدادات";
+            this.btnSettings.Text = "الاجور";
             this.btnSettings.UseVisualStyleBackColor = false;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
             // pictureBox7
             // 
@@ -375,16 +376,16 @@
             // 
             this.labelHome.AutoSize = true;
             this.labelHome.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelHome.Location = new System.Drawing.Point(267, 360);
+            this.labelHome.Location = new System.Drawing.Point(352, 412);
             this.labelHome.Name = "labelHome";
-            this.labelHome.Size = new System.Drawing.Size(192, 32);
+            this.labelHome.Size = new System.Drawing.Size(193, 32);
             this.labelHome.TabIndex = 1;
             this.labelHome.Text = "نظام إدارة المقهي";
             // 
             // pictureBox9
             // 
             this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
-            this.pictureBox9.Location = new System.Drawing.Point(101, 6);
+            this.pictureBox9.Location = new System.Drawing.Point(163, 59);
             this.pictureBox9.Name = "pictureBox9";
             this.pictureBox9.Size = new System.Drawing.Size(568, 309);
             this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

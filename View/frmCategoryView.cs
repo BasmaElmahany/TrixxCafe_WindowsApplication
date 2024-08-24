@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Trixx_CafeSystem.View
 {
-    public partial class frmCategoryView : frmSampleView
+    public partial class FrmCategoryView : frmSampleView
     {
-        public frmCategoryView()
+        public FrmCategoryView()
         {
             InitializeComponent();
         }

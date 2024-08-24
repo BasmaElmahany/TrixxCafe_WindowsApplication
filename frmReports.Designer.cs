@@ -49,7 +49,7 @@
             // 
             this.btnSaleByCtg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(55)))), ((int)(((byte)(89)))));
             this.btnSaleByCtg.ForeColor = System.Drawing.Color.White;
-            this.btnSaleByCtg.Image = global::Trixx_CafeSystem.Properties.Resources.newdownload2;
+            this.btnSaleByCtg.Image = global::Trixx_CafeSystem.Properties.Resources.newdownload1;
             this.btnSaleByCtg.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSaleByCtg.Location = new System.Drawing.Point(496, 88);
             this.btnSaleByCtg.Name = "btnSaleByCtg";

@@ -1,6 +1,6 @@
 ﻿namespace Trixx_CafeSystem
 {
-    partial class RTLMessageBoxForm
+    public partial class RTLMessageBoxForm
     {
         /// <summary>
         /// Required designer variable.

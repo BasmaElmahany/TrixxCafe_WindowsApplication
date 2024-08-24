@@ -26,5 +26,10 @@ namespace Trixx_CafeSystem
         {
             this.Close();
         }
+        protected override void OnFormClosed(FormClosedEventArgs e)
+        {
+            
+            base.OnFormClosed(e);
+        }
     }
 }

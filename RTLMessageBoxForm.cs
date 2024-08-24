@@ -6,7 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web.Services.Description;
+//using System.Web.Services.Description;
 using System.Windows.Forms;
 
 namespace Trixx_CafeSystem
