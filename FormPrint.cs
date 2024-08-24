@@ -11,16 +11,11 @@ using System.Windows.Forms;
 
 namespace Trixx_CafeSystem
 {
-    public partial class frmPrint : Form
+    public partial class FormPrint : Form
     {
-        public frmPrint()
+        public FormPrint()
         {
             InitializeComponent();
-        }
-
-        private void crystalReportViewer1_Load(object sender, EventArgs e)
-        {
-            btnMax.PerformClick();
         }
 
         private void btnExit_Click(object sender, EventArgs e)
