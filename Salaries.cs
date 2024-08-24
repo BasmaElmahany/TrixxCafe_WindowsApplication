@@ -8,9 +8,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Trixx_CafeSystem
 {
-    class Salaries
-    {
-        [Key]
+   public class Salaries
+    { 
+       [ Key ]
+        public int salaryID { get; set; }
         [ForeignKey("Staff_Member")]
         public int staffID { get; set; }
         public virtual Staff Staff_Member { get; set; }
