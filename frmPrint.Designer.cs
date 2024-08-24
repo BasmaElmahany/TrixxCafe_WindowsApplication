@@ -59,6 +59,7 @@
             this.btnMin.TabIndex = 5;
             this.btnMin.Text = "تصغير";
             this.btnMin.UseVisualStyleBackColor = false;
+            this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
             // btnMax
             // 
@@ -72,6 +73,7 @@
             this.btnMax.TabIndex = 4;
             this.btnMax.Text = "تكبير";
             this.btnMax.UseVisualStyleBackColor = false;
+            this.btnMax.Click += new System.EventHandler(this.btnMax_Click);
             // 
             // btnExit
             // 
