@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,11 +14,13 @@ namespace Trixx_CafeSystem
 {
     public partial class frmPOS : Form
     {
-        
+        private string _loggedInUserName;
+        Context Context = new Context();
 
-        public frmPOS()
+        public frmPOS(string loggedInUserName)
         {
             InitializeComponent();
+            _loggedInUserName = loggedInUserName;
         }
        
       
@@ -149,11 +152,17 @@ namespace Trixx_CafeSystem
 
         private void Close_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("هل تريد تاكيد الخروج ؟؟", "تاكيد الخروج", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-            if (result == DialogResult.Yes)
+            try
             {
-                Application.Exit();
+                DialogResult result = RTLMessageBoxForm.Show("هل تريد الخروج ؟", "الخروج");
+                if (result == DialogResult.Yes)
+                {
+                    this.Close(); // Close the current form
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine($"Exception: {ex.Message}");
             }
         }
 
@@ -216,11 +225,22 @@ namespace Trixx_CafeSystem
                         Quantity = quantity,
                         AmountPrice = amountPrice
                     };
-
                     context.OrderProducts.Add(orderProduct);
-                    orderProducts.Add(orderProduct);
+                    orderProducts.Add(orderProduct);                  
                 }
-
+                //Store the order to bill
+                double totalPrice = orderProducts
+                                    .Where(op => op.OrderId == order.Order_Id)
+                                    .Sum(op => (double)op.AmountPrice);
+                var bill = new Bill
+                {
+                    OrderId = order.Order_Id,
+                    BillDate = DateTime.Now,
+                    BillTime = DateTime.Now.TimeOfDay,
+                    CashierID = GetCurrentUserId(),
+                    TotalPrice = totalPrice
+                };
+                context.Bills.Add(bill);
                 context.SaveChanges();
 
                 MessageBox.Show("Order saved successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -228,17 +248,19 @@ namespace Trixx_CafeSystem
 
                 // Display the saved order in frmBillList
 
-                //frmBillList billForm = new frmBillList();
-                //billForm.AddOrderToGrid(order, orderProducts);
-                //billForm.Show();
+                frmBillList billForm = new frmBillList();
+                billForm.Show();
             }
         }
 
         //  method to simulate getting the current user's ID
-        private int? GetCurrentUserId()
+        private int GetCurrentUserId()
         {
-            // Implement this method to return the currently logged-in user's ID
-            return 1; // Replace with actual user ID retrieval logic
+            int? userId = Context.Login_Users
+                .Where(u => u.User_Name == _loggedInUserName)
+                .Select(u => (int?)u.User_ID).FirstOrDefault();
+
+            return userId.Value; // Replace with actual user ID retrieval logic
         }
 
         
